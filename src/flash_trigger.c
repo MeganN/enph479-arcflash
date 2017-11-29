@@ -83,18 +83,12 @@ int main(void)
   while (1) {
 
 
- if (!GPIO_PinInGet(gpioPortD, BSP_GPIO_PB0_PIN))
- {
-	GPIO_PinOutSet(gpioPortB, 12);
-	Delay(3000);
-	GPIO_PinOutClear(gpioPortB,12);
+	 if (!GPIO_PinInGet(gpioPortD, BSP_GPIO_PB0_PIN))
+	 {
+		GPIO_PinOutSet(gpioPortB, 12);
+		Delay(3000);
+		GPIO_PinOutClear(gpioPortB,12);
 
- }
-
-
-
-
+	 }
   }
 }
-
-
